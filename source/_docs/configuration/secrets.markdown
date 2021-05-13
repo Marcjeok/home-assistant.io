@@ -24,13 +24,13 @@ Those entries need to be replaced with `!secret` and an identifier.
 homeassistant:
   auth_providers:
    - type: legacy_api_password
-     api_password: !secret http_password
+     api_password: '!secret http_password'
 ```
 
 The `secrets.yaml` file contains the corresponding password assigned to the identifier.
 
 ```yaml
-http_password: "YOUR_PASSWORD"
+http_password: YOUR_PASSWORD
 ```
 
 ## Debugging secrets
